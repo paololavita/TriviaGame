@@ -12,7 +12,7 @@ $(document).ready(function(){
 
         var questions = {
             questionsArray: [{
-                question: "Who at William Osler is the most uselaess?",
+                question: "Who at William Osler is the most useless and biggest waste to the Ontario Taxpayer?",
                 a: "Elio D",
                 b: "John Go",
                 c: "Janet M",
@@ -78,7 +78,9 @@ $(document).ready(function(){
             + "<div><input type = 'radio' name = " + i + " value = " + questions.questionsArray[i].a + " id = 'disable1' " + i + ">" + questions.questionsArray[i].a + "</div>"
             + "<div><input type = 'radio' name = " + i + " value = " + questions.questionsArray[i].b + " id = 'disable2' " + i + ">" + questions.questionsArray[i].b + "</div>"
             + "<div><input type = 'radio' name = " + i + " value = " + questions.questionsArray[i].c + " id = 'disable3' " + i + ">" + questions.questionsArray[i].c + "</div>"
-            + "<div><input type = 'radio' name = " + i + " value = " + questions.questionsArray[i].d + " id = 'disable4' " + i + ">" + questions.questionsArray[i].d + "</div><br>");
+            + "<div><input type = 'radio' name = " + i + " value = " + questions.questionsArray[i].d + " id = 'disable4' " + i + ">" + questions.questionsArray[i].d + "</div>"
+            + "<div><input type = 'radio' name = " + i + " value = " + questions.questionsArray[i].e + " id = 'disable5' " + i + ">" + questions.questionsArray[i].e + "</div>"
+            + "<div><input type = 'radio' name = " + i + " value = " + questions.questionsArray[i].f + " id = 'disable6' " + i + ">" + questions.questionsArray[i].f+ "</div><br>");
         }
 
         $("#submit-button").click(function(){
