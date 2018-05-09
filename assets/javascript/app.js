@@ -94,10 +94,14 @@ $(document).ready(function(){
                     {answer4: "England"},
                     {answer5: "7.5 degrees"}]
                 };
+
                 var clickA = $("#disable1").click(function(){console.log($(this).attr("checked", true).val());});
                 var clickB = $("#disable2").click(function(){console.log($(this).attr("checked", true).val());});
                 var clickC = $("#disable3").click(function(){console.log($(this).attr("checked", true).val());});
                 var clickD = $("#disable4").click(function(){console.log($(this).attr("checked", true).val());});
+                
+                console.log(answers[]);
+                
                 if( clickA === answers.answersArray.answer0){
                     console.log("correct");
                 }
