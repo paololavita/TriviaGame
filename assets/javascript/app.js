@@ -12,11 +12,14 @@ $(document).ready(function(){
 
         var questions = {
             questionsArray: [{
-                question: "1) What is the fastest bird on foot?",
-                a: "Ostrich",
-                b: "Sparrow",
-                c: "Eagle",
-                d: "Woodpecker",
+                question: "Who at William Osler is the most uselaess?",
+                a: "Elio D",
+                b: "John Go",
+                c: "Janet M",
+                d: "James M",
+                e: "Joe C",
+                f: "All the Above"
+
             // },
             // {
             //  question: "2) How long is one regular term for a U.S. Representative?",
