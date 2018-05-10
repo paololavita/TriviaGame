@@ -93,10 +93,10 @@ $(document).ready(function(){
                 var clickB = $("#disable2").click(function(){console.log($(this).attr("checked", true).val());});
                 var clickC = $("#disable3").click(function(){console.log($(this).attr("checked", true).val());});
                 var clickD = $("#disable4").click(function(){console.log($(this).attr("checked", true).val());});
-                if( clickA === answers.answersArray.answer0){
+                if( clickA.value === answers.answersArray.answer0){
                     console.log("correct");
                 }
-                else if ( clickA != answers.answersArray.answer0){
+                else if ( clickA.value!= answers.answersArray.answer0){
                     console.log("incorrect");
                 }
             }
