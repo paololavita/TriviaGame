@@ -12,11 +12,11 @@ $(document).ready(function(){
 
         var questions = {
             questionsArray: [{
-                question: "What is the fastest bird on foot?",
-                a: "Ostrich",
-                b: "Sparrow",
-                c: "Eagle",
-                d: "Woodpecker",
+                question: "In what movie did Kevin Bacon dance?",
+                a: "Footloose",
+                b: "Tremors",
+                c: "Diner",
+                d: "Quicksilver",
                 },
                 {  
                 question: "What special talent did Molly Ringwald have in The Breakfast Club?",
@@ -27,9 +27,9 @@ $(document).ready(function(){
                 },
                 {
                 question: "In The Blues Brothers, what does SCMODS stand for? ",
-                a: "Georgia",
+                a: "System County Municipal Offender Data State",
                 b: "State County Municipal Offender Data Systems",
-                c: "Texas",
+                c: "System Country Municipal Offender Data Status",
                 d: "State County Municipal Offence Date System",
                 },
                 {
@@ -86,12 +86,11 @@ $(document).ready(function(){
                 
                 var answers = {
                     answersArray:
-                    [{answer0: "Ostrich"},
-                     {answer1: "2 years"},
-                     {answer2: "Georgia"},
-                     {answer3: "Cumulus"},
-                     {answer4: "England"},
-                     {answer5: "7.5 degrees"}]
+                    [{answer0: "Footloose"},
+                     {answer1: "She could apply lipstick with her breasts."},
+                     {answer2: "State County Municipal Offender Data Systems"},
+                     {answer3: "Five"},
+                     {answer4: "He puts a banana in its tailpipe"}]
                 };
 
                 //var clickA = $("#disable1").click(function(){console.log($(this).attr("checked", true).val());});
@@ -110,7 +109,10 @@ $(document).ready(function(){
 
                // }
 
-
+                //Pseucode Code: I should be able to capture the correct answer using JQuery and then add to a correct and incorrect score variable.
+                //At the end of the game or at the end of the 60 seconds the score should display
+                
+                //I am unable to figure out why this isn't working. I like using the array for answers and questions but I suspect dealing with the array is part of my issue.
                 
                 //if( clickA.value === answers.answersArray[0]){
                     //console.log("correct");
