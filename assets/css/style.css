@@ -1,4 +1,17 @@
-body {
+.col-2{
+
+    background-image: url("eighties.jpg");
+}
+
+
+body{
+    background: grey;
+}
+
+
+
+.container {
     background: grey;
     color: greenyellow;
 }
+

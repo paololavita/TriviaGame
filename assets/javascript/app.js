@@ -4,7 +4,7 @@ $(document).ready(function(){
     $("#start-button").click(function() {
         $("#start-button").hide();
         $("#submit-button").show();
-        // $(this).parent().remove();
+        //$(this).parent().remove();
 
         // *** Timer that runs down to 0 ***
         var number = 60;
@@ -17,41 +17,34 @@ $(document).ready(function(){
                 b: "Sparrow",
                 c: "Eagle",
                 d: "Woodpecker",
-            // },
-            // {
-            //  question: "2) How long is one regular term for a U.S. Representative?",
-            //  a: "3 years",
-            //  b: "2 years",
-            //  c: "4 years",
-            //  d: "5 years",
-            // },
-            // {
-            //  question: "3) Which of the following states is not on the Gulf of Mexico?",
-            //  a: "Georgia",
-            //  b: "Alabama",
-            //  c: "Texas",
-            //  d: "Mississippi",
-            // },
-            // {
-            //  question: "4) What white, puffy clouds are known as 'fair weather' clouds?",
-            //  a: "Cumulus",
-            //  b: "Cumulonimbus",
-            //  c: "Stratus",
-            //  d: "Cirrus",
-            // },
-            // {
-            //  question: "5) Between 1455 and 1485, the War of the Roses took place in what country?",
-            //  a: "France",
-            //  b: "England",
-            //  c: "Germany",
-            //  d: "Spain",
-            // },
-            // {
-            //  question: "6) It's three fifteen PM. What is the degree difference between the hour hand and minute hand?",
-            //  a: "0 degrees",
-            //  b: "6 degrees",
-            //  c: "7.5 degrees",
-            //  d: "90 degrees",
+                },
+                {  
+                question: "What special talent did Molly Ringwald have in The Breakfast Club?",
+                a: "She had hundreds of clothes",
+                b: "She ate sushi",
+                c: "She could stick her tongue out past her nose",
+                d: "She could apply lipstick with her breasts.",
+                },
+                {
+                question: "In The Blues Brothers, what does SCMODS stand for? ",
+                a: "Georgia",
+                b: "State County Municipal Offender Data Systems",
+                c: "Texas",
+                d: "State County Municipal Offence Date System",
+                },
+                {
+                question: "How many Nightmare On Elm Street movies were made in the 80's? ",
+                a: "Four",
+                b: "Three",
+                c: "Six",
+                d: "Five",
+                },
+                {
+                question: "In Beverly Hills Cop, how does Axel Foley escape the police car that is sent to follow him?",
+                a: "He craetes a distraction",
+                b: "He steals the keys",
+                c: "He puts a banana in its tailpipe",
+                d: "He outruns it in a car chase",
             }]
         };
 
@@ -67,6 +60,8 @@ $(document).ready(function(){
             }
             function stop() {
                 clearInterval(intervalId);
+                //$("#submit-button").hide();
+                //$("#start-button").show();
             }
         }
 
@@ -78,29 +73,53 @@ $(document).ready(function(){
             + "<div><input type = 'radio' name = " + i + " value = " + questions.questionsArray[i].d + " id = 'disable4' " + i + ">" + questions.questionsArray[i].d + "</div><br>");
         }
 
-        $("#submit-button").click(function(){
-            function answerKey(){
-                var answers = {
-                    answersArray:
-                    [{answer0: "Ostrich"},
-                    {answer1: "2 years"},
-                    {answer2: "Georgia"},
-                    {answer3: "Cumulus"},
-                    {answer4: "England"},
-                    {answer5: "7.5 degrees"}]
-                };
                 var clickA = $("#disable1").click(function(){console.log($(this).attr("checked", true).val());});
                 var clickB = $("#disable2").click(function(){console.log($(this).attr("checked", true).val());});
                 var clickC = $("#disable3").click(function(){console.log($(this).attr("checked", true).val());});
                 var clickD = $("#disable4").click(function(){console.log($(this).attr("checked", true).val());});
-                if( clickA.value === answers.answersArray.answer0){
-                    console.log("correct");
-                }
-                else if ( clickA.value!= answers.answersArray.answer0){
-                    console.log("incorrect");
-                }
-            }
+
+        $("#submit-button").click(function(){
+
             answerKey();
+
+            function answerKey(){
+                
+                var answers = {
+                    answersArray:
+                    [{answer0: "Ostrich"},
+                     {answer1: "2 years"},
+                     {answer2: "Georgia"},
+                     {answer3: "Cumulus"},
+                     {answer4: "England"},
+                     {answer5: "7.5 degrees"}]
+                };
+
+                //var clickA = $("#disable1").click(function(){console.log($(this).attr("checked", true).val());});
+                //var clickB = $("#disable2").click(function(){console.log($(this).attr("checked", true).val());});
+                //var clickC = $("#disable3").click(function(){console.log($(this).attr("checked", true).val());});
+                //var clickD = $("#disable4").click(function(){console.log($(this).attr("checked", true).val());});
+
+                //console.log(answers.answersArray[].answer0);
+
+                //if($(this).prop("checked") == true){
+
+                    console.log(clickA.defaultValue);
+                    console.log(clickB.defaultValue);
+                    console.log(clickC.defaultValue);
+                    console.log(clickD.defaultValue);
+
+               // }
+
+
+                
+                //if( clickA.value === answers.answersArray[0]){
+                    //console.log("correct");
+                //}
+                //else if ( clickA.value!== answers.answersArray[0]){
+                    //console.log("incorrect");
+                //}
+            }
+            
         });
 
         // Run the functions after start button click
